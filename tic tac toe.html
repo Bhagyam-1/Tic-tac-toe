@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<head>
+    <style>
+        body {
+            margin: 0;
+            position: relative;
+            background-color: black;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .make {
+            position: absolute;
+            height: 15vh;
+            top: 0vh;
+            left: 22vw;
+            background-color: rgba(0, 0, 255,0.8);
+
+            opacity: 0.8;
+            width: 54vw;
+        }
+
+        #mk {
+            position: absolute;
+            color: white;
+            top: 0vh;
+            left: 18vw;
+            font-size: 6.8vh;
+
+        }
+
+
+        .a {
+            position: relative;
+            opacity: 0.95;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .b {
+            position: absolute;
+            top: 16vh;
+            left: 32vw;
+            background-color: black;
+            opacity: 0.95;
+            height: 70vh;
+            width: 34vw;
+        }
+
+        .a1 {
+
+            position: absolute;
+            top: 5vh;
+            left: 5vh;
+            height: 20vh;
+            width: 10vw;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+
+        }
+
+        .a2 {
+            position: absolute;
+            top: 5vh;
+            left: 25vh;
+            height: 20vh;
+            width: 10vw;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        .a3 {
+            position: absolute;
+            top: 5vh;
+            left: 45vh;
+            height: 20vh;
+            width: 10vw;
+            border-bottom: 1px solid white;
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        .a4 {
+            position: absolute;
+            top: 25vh;
+            left: 5vh;
+            height: 20vh;
+            width: 10vw;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        .a5 {
+            position: absolute;
+            top: 25vh;
+            left: 25vh;
+            height: 20vh;
+            width: 10vw;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        .a6 {
+            position: absolute;
+            top: 25vh;
+            left: 45vh;
+            height: 20vh;
+            width: 10vw;
+            border-bottom: 1px solid white;
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        .a7 {
+            position: absolute;
+            top: 45vh;
+            left: 5vh;
+            height: 20vh;
+            width: 10vw;
+            border-right: 1px solid white;
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        .a8 {
+            position: absolute;
+            top: 45vh;
+            left: 25vh;
+            height: 20vh;
+            width: 10vw;
+
+            border-right: 1px solid white;
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        .a9 {
+            position: absolute;
+            top: 45vh;
+            left: 45vh;
+            height: 20vh;
+            width: 10vw;
+
+        }
+
+        #wrt1 {
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        #wrt2 {
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        #wrt3 {
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        #wrt4 {
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        #wrt5 {
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        #wrt6 {
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        #wrt7 {
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        #wrt8 {
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+        }
+
+        #wrt9 {
+            color: white;
+            font-size: 8vh;
+            text-align: center;
+         
+           
+        }
+
+        button
+        {
+            position: absolute;
+            background-color: red;
+            float:right;
+            top:8vh;
+            right:24vw;
+            border: none;
+            height: 7vh;
+            width:6.5vw;
+            color: rgb(255, 255, 255);
+            font-size: larger;
+            cursor: pointer;
+        }
+
+        @keyframes example 
+        {
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        
+
+/*                                 for mobile                                 */
+
+        @media (max-width:500px) 
+        {
+
+            body
+            {
+            overflow: hidden;
+            }
+
+            .make 
+            {
+            position: absolute;
+            height: 10vh;
+            top: 0vh;
+            left: 0vw;
+            background-color: rgba(0, 0, 255,0.8);
+         
+            opacity: 0.8;
+            width: 100vw;
+        }
+
+        #mk {
+            position: absolute;
+            color: white;
+            top: 0vh;
+            left: 30vw;
+            width:98vw;
+            font-size: 1.8rem;
+        }
+
+
+        .a {
+            position: relative;
+            opacity: 0.95;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .b {
+            position: absolute;
+            top: 16vh;
+            left: 16vw;
+            background-color: black;
+            opacity: 0.95;
+            height: 70vh;
+            width: 40vw;
+        }
+
+        .a1 {
+
+            position: absolute;
+            top: 10vh;
+            left: 10vw;
+            height: 14vh;
+            width: 18vw;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+        }
+
+        .a2 {
+            position: absolute;
+            top: 10vh;
+            left: 28vw;
+            height: 14vh;
+            width: 18vw;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+           }
+
+        .a3 {
+            position: absolute;
+            top: 10vh;
+            left: 46vw;
+            height: 14vh;
+            width: 18vw;
+            border-bottom: 1px solid white;
+           }
+
+        .a4 {
+            position: absolute;
+            top: 24vh;
+            left: 10vw;
+            height: 14vh;
+            width: 18vw;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+           }
+
+        .a5 {
+            position: absolute;
+            top: 24vh;
+            left: 28vw;
+            height: 14vh;
+            width: 18vw;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+           }
+
+        .a6 {
+            position: absolute;
+            top: 24vh;
+            left: 46vw;
+            height: 14vh;
+            width: 18vw;
+            border-bottom: 1px solid white;
+           
+        }
+
+        .a7 {
+            position: absolute;
+            top: 38vh;
+            left: 10vw;
+            height: 14vh;
+            width: 18vw;
+            border-right: 1px solid white;
+            
+        }
+
+        .a8 {
+            position: absolute;
+            top: 38vh;
+            left: 28vw;
+            height: 14vh;
+            width: 18vw;
+
+            border-right: 1px solid white;
+           
+        }
+
+        .a9 {
+            position: absolute;
+            top: 38vh;
+            left: 46vw;
+            height: 14vh;
+            width: 18vw;
+
+        }
+
+        #wrt1 {
+            color: white;
+            font-size: 5vh;
+            text-align: center;
+        }
+
+        #wrt2 {
+            color: white;
+            font-size: 5vh;
+            text-align: center;
+        }
+
+        #wrt3 {
+            color: white;
+            font-size: 5vh;
+            text-align: center;
+        }
+
+        #wrt4 {
+            color: white;
+            font-size: 5vh;
+            text-align: center;
+        }
+
+        #wrt5 {
+            color: white;
+            font-size: 5vh;
+            text-align: center;
+        }
+
+        #wrt6 {
+            color: white;
+            font-size: 5vh;
+            text-align: center;
+        }
+
+        #wrt7 {
+            color: white;
+            font-size: 5vh;
+            text-align: center;
+        }
+
+        #wrt8 {
+            color: white;
+            font-size: 5vh;
+            text-align: center;
+        }
+
+        #wrt9 {
+            color: white;
+            font-size: 5vh;
+            text-align: center;
+         
+           
+        }
+
+        button
+        {
+            position: absolute;
+            background-color:transparent;
+            
+            left:84vw;
+            top:5vh;
+            border: none;
+            height: 3vh;
+            width:12vw;
+            color: rgb(255, 255, 255);
+            font-size: medium;
+            cursor: pointer;
+        }
+
+        p {
+            color: red;
+        };
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+
+    <div class="a">
+
+        <div class="make">
+            <h1 id="mk">Player 1 Won</h1>
+        </div>
+
+        <div class="b">
+
+            <div class="a1">
+                <p id="wrt1"></p>
+            </div>
+
+            <div class="a2">
+                <p id="wrt2"></p>
+            </div>
+
+            <div class="a3">
+                <p id="wrt3"></p>
+            </div>
+
+            <div class="a4">
+                <p id="wrt4"></p>
+            </div>
+
+            <div class="a5">
+                <p id="wrt5"></p>
+            </div>
+
+            <div class="a6">
+                <p id="wrt6"></p>
+            </div>
+
+            <div class="a7">
+                <p id="wrt7"></p>
+            </div>
+
+            <div class="a8">
+                <p id="wrt8"></p>
+            </div>
+
+            <div class="a9">
+                <p id="wrt9"></p>
+            </div>
+
+        </div>
+
+        <button type="submit"><p>Replay</p></button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+
+
+
+        $(".make").hide();
+        $("button").hide();
+        var c = 0, r = 0;
+
+        var b = [-1, -1, -1, -1, -1, -1, -1, -1, -1];
+
+        $(".a1").on("click", function () {
+
+
+
+            if ($("#wrt1").text() != "X" && $("#wrt1").text() != "O" && r == 0) {
+                var audio = new Audio("writing.wav");
+                audio.play();
+
+                if (c % 2 == 0) {
+                    $("#wrt1").text("X");
+                    b[0] = 1;
+
+                    if ((b[0] == b[1] && b[1] == b[2])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1 Won"); $("#wrt1").css("color", "red");  $("#wrt1").css("animation", "example 1s infinite"); $("#wrt2").css("color", "red");  $("#wrt2").css("animation", "example 1s infinite"); $("#wrt3").css("color", "red");  $("#wrt3").css("animation", "example 1s infinite"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    else if (b[0] == b[4] && b[4] == b[8]) {
+                        setTimeout(function () { $("button").show(); $(".make").show(); $("#mk").text("Player 1 Won"); $("#wrt1").css("color", "red"); $("#wrt1").css("animation", "example 1s infinite"); $("#wrt5").css("color", "red"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt9").css("color", "red"); $("#wrt9").css("animation", "example 1s infinite"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    else if (b[0] == b[3] && b[3] == b[6]) {
+                        setTimeout(function () { $("button").show(); $(".make").show(); $("#mk").text("Player 1 Won"); $("#wrt1").css("animation", "example 1s infinite");  $("#wrt4").css("animation", "example 1s infinite"); $("#wrt7").css("animation", "example 1s infinite"); $("#wrt1").css("color", "red"); $("#wrt4").css("color", "red"); $("#wrt7").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                else {
+                    $("#wrt1").text("O");
+                    b[0] = 0;
+
+                    if ((b[0] == b[1] && b[1] == b[2])) {
+                        setTimeout(function () { $("button").show();$(".make").show(); $("#mk").text("Player 2 Won"); $("#wrt1").css("animation", "example 1s infinite"); $("#wrt2").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite"); $("#wrt1").css("color", "red"); $("#wrt2").css("color", "red"); $("#wrt3").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    else if (b[0] == b[4] && b[4] == b[8]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won");   $("#wrt1").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite"); $("#wrt1").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    else if (b[0] == b[3] && b[3] == b[6]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won");   $("#wrt1").css("animation", "example 1s infinite"); $("#wrt4").css("animation", "example 1s infinite"); $("#wrt7").css("animation", "example 1s infinite"); $("#wrt1").css("color", "red"); $("#wrt4").css("color", "red"); $("#wrt7").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                c++;
+            }
+
+            if (c == 9) {
+                setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Match Draw"); }, 1);
+            }
+
+        });
+
+        $(".a2").on("click", function () {
+
+
+            if ($("#wrt2").text() != "X" && $("#wrt2").text() != "O") {
+                var audio = new Audio("writing.wav");
+                audio.play();
+
+                if (c % 2 == 0) {
+                    $("#wrt2").text("X");
+                    b[1] = 1;
+
+                    if (b[1] == b[4] && b[4] == b[7]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1 Won");   $("#wrt5").css("animation", "example 1s infinite"); $("#wrt2").css("animation", "example 1s infinite"); $("#wrt8").css("animation", "example 1s infinite"); $("#wrt2").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt8").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    else if (b[0] == b[1] && b[1] == b[2]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1 Won");  $("#wrt1").css("animation", "example 1s infinite"); $("#wrt2").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite"); $("#wrt2").css("color", "red"); $("#wrt1").css("color", "red"); $("#wrt3").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                else {
+                    $("#wrt2").text("O");
+                    b[1] = 0;
+
+                    if (b[1] == b[4] && b[4] == b[7]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt8").css("animation", "example 1s infinite"); $("#wrt2").css("animation", "example 1s infinite");  $("#wrt2").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt8").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    else if (b[0] == b[1] && b[1] == b[2]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won");  $("#wrt1").css("animation", "example 1s infinite"); $("#wrt2").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite"); $("#wrt2").css("color", "red"); $("#wrt1").css("color", "red"); $("#wrt3").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                c++;
+            }
+
+
+            if (c == 9) {
+                setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Match Draw"); }, 1);
+            }
+
+        });
+
+        $(".a3").on("click", function () {
+
+
+            if ($("#wrt3").text() != "X" && $("#wrt3").text() != "O" && r == 0) {
+                var audio = new Audio("writing.wav");
+                audio.play();
+
+                if (c % 2 == 0) {
+                    $("#wrt3").text("X");
+                    b[2] = 1;
+
+
+                    if (b[0] == b[1] && b[1] == b[2]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1 Won"); 
+                        $("#wrt1").css("animation", "example 1s infinite"); $("#wrt2").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite");
+                        $("#wrt1").css("color", "red"); $("#wrt2").css("color", "red"); $("#wrt3").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[2] == b[4] && b[4] == b[6]) {
+
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1 Won");
+                        $("#wrt7").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite");
+                        $("#wrt3").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt7").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[2] == b[5] && b[5] == b[8]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1 Won"); 
+                        $("#wrt6").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite");
+                        $("#wrt3").css("color", "red"); $("#wrt6").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                }
+
+                else {
+                    $("#wrt3").text("O");
+                    b[2] = 0;
+
+                    if (b[0] == b[1] && b[1] == b[2]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won"); 
+                        $("#wrt1").css("animation", "example 1s infinite"); $("#wrt2").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite");
+                        $("#wrt1").css("color", "red"); $("#wrt2").css("color", "red"); $("#wrt3").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[2] == b[4] && b[4] == b[6]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won"); 
+                        $("#wrt5").css("animation", "example 1s infinite"); $("#wrt7").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite");
+                        $("#wrt3").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt7").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[2] == b[5] && b[5] == b[8]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won"); 
+                        $("#wrt3").css("animation", "example 1s infinite"); $("#wrt6").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite");
+                        $("#wrt3").css("color", "red"); $("#wrt6").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                c++;
+            }
+
+
+            if (c == 9) {
+                setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Match Draw"); }, 1);
+            }
+
+        });
+
+        $(".a4").on("click", function () {
+
+            if ($("#wrt4").text() != "X" && $("#wrt4").text() != "O" && r == 0) {
+                var audio = new Audio("writing.wav");
+                audio.play();
+
+                if (c % 2 == 0) {
+                    $("#wrt4").text("X");
+                    b[3] = 1;
+
+                    if (b[0] == b[3] && b[3] == b[6]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1 Won"); 
+                        $("#wrt1").css("animation", "example 1s infinite"); $("#wrt4").css("animation", "example 1s infinite"); $("#wrt7").css("animation", "example 1s infinite");
+                        $("#wrt1").css("color", "red"); $("#wrt4").css("color", "red"); $("#wrt7").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    else if (b[3] == b[4] && b[5] == b[4]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1 Won"); 
+                        $("#wrt4").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt6").css("animation", "example 1s infinite");
+                        $("#wrt4").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt6").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+
+                }
+
+                else {
+                    $("#wrt4").text("O");
+                    b[3] = 0;
+
+
+                    if (b[0] == b[3] && b[3] == b[6]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won"); 
+                        $("#wrt1").css("animation", "example 1s infinite"); $("#wrt4").css("animation", "example 1s infinite"); $("#wrt7").css("animation", "example 1s infinite");
+                        $("#wrt1").css("color", "red"); $("#wrt4").css("color", "red"); $("#wrt7").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    else if (b[3] == b[4] && b[5] == b[4]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won"); 
+                        $("#wrt4").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt6").css("animation", "example 1s infinite");
+                        $("#wrt4").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt6").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                c++;
+            }
+
+
+            if (c == 9) {
+                setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Match Draw"); }, 1);
+            }
+
+        });
+
+        $(".a5").on("click", function () {
+
+            if ($("#wrt5").text() != "X" && $("#wrt5").text() != "O" && r == 0) {
+                var audio = new Audio("writing.wav");
+                audio.play();
+
+                if (c % 2 == 0) {
+                    $("#wrt5").text("X");
+                    b[4] = 1;
+
+
+                    if ((b[1] == b[4] && b[4] == b[7])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1 Won"); 
+                        $("#wrt5").css("animation", "example 1s infinite"); $("#wrt2").css("animation", "example 1s infinite"); $("#wrt8").css("animation", "example 1s infinite");
+                        $("#wrt2").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt8").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if ((b[4] == b[3] && b[3] == b[5])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1 Won"); 
+                        $("#wrt4").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt6").css("animation", "example 1s infinite");
+                        $("#wrt4").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt6").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[4] == b[2] && b[2] == b[6]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1 Won"); 
+                        $("#wrt7").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite");
+                        $("#wrt3").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt7").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[4] == b[0] && b[4] == b[8]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1 Won");
+                        $("#wrt1").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite");
+                        $("#wrt1").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                else {
+                    $("#wrt5").text("O");
+                    b[4] = 0;
+                    if ((b[1] == b[4] && b[4] == b[7])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won"); 
+                        $("#wrt5").css("animation", "example 1s infinite"); $("#wrt2").css("animation", "example 1s infinite"); $("#wrt8").css("animation", "example 1s infinite");
+                        $("#wrt2").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt8").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if ((b[4] == b[3] && b[3] == b[5])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won"); 
+                        $("#wrt4").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt6").css("animation", "example 1s infinite");
+                        $("#wrt4").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt6").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[4] == b[2] && b[2] == b[6]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won"); 
+                        $("#wrt5").css("animation", "example 1s infinite"); $("#wrt7").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite");
+                        $("#wrt3").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt7").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[4] == b[0] && b[4] == b[8]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2 Won"); 
+                        $("#wrt1").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite");
+                        $("#wrt1").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                c++;
+            }
+
+            if (c == 9) {
+                setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Match Draw"); }, 1);
+            }
+
+        });
+
+        $(".a6").on("click", function () {
+
+
+            if ($("#wrt6").text() != "X" && $("#wrt6").text() != "O" && r == 0) {
+                var audio = new Audio("writing.wav");
+                audio.play();
+
+                if (c % 2 == 0) {
+                    $("#wrt6").text("X");
+                    b[5] = 1;
+
+                    if ((b[2] == b[5] && b[5] == b[8])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1  Won"); 
+                        $("#wrt6").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite");
+                        $("#wrt3").css("color", "red"); $("#wrt6").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if ((b[3] == b[4] && b[4] == b[5])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1  Won");
+                        $("#wrt4").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt6").css("animation", "example 1s infinite");
+                        $("#wrt4").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt6").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                else {
+                    $("#wrt6").text("O");
+                    b[5] = 0;
+
+                    if (b[2] == b[5] && b[5] == b[8]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1  Won"); 
+                        $("#wrt6").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite");
+                        $("#wrt3").css("color", "red"); $("#wrt6").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[3] == b[4] && b[4] == b[5]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1  Won");
+                        $("#wrt4").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt6").css("animation", "example 1s infinite");
+                        $("#wrt4").css("color", "red"); $("#wrt6").css("color", "red"); $("#wrt5").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                c++;
+            }
+
+            if (c == 9) {
+                setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Match Draw"); }, 1);
+            }
+
+        });
+
+        $(".a7").on("click", function () {
+
+
+            if ($("#wrt7").text() != "X" && $("#wrt7").text() != "O" && r == 0) {
+                var audio = new Audio("writing.wav");
+                audio.play();
+
+                if (c % 2 == 0) {
+                    $("#wrt7").text("X");
+                    b[6] = 1;
+
+                    if ((b[6] == b[7] && b[7] == b[8])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1  Won"); 
+                        $("#wrt7").css("animation", "example 1s infinite"); $("#wrt8").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite");
+                        $("#wrt7").css("color", "red"); $("#wrt8").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if ((b[6] == b[3] && b[3] == b[0])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1  Won"); 
+                        $("#wrt1").css("animation", "example 1s infinite"); $("#wrt4").css("animation", "example 1s infinite"); $("#wrt7").css("animation", "example 1s infinite");
+                        $("#wrt1").css("color", "red"); $("#wrt4").css("color", "red"); $("#wrt7").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[6] == b[4] && b[4] == b[2]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1  Won"); 
+                        $("#wrt7").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt3").css("animation", "example 1s infinite");
+                        $("#wrt3").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt7").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                else {
+                    $("#wrt7").text("O");
+                    b[6] = 0;
+
+                    if ((b[6] == b[7] && b[7] == b[8])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2  Won"); 
+                        $("#wrt7").css("animation", "example 1s infinite"); $("#wrt8").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite");
+                        $("#wrt7").css("color", "red"); $("#wrt8").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if ((b[6] == b[3] && b[3] == b[0])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2  Won");
+                        $("#wrt1").css("animation", "example 1s infinite"); $("#wrt4").css("animation", "example 1s infinite"); $("#wrt7").css("animation", "example 1s infinite");
+                        $("#wrt1").css("color", "red"); $("#wrt4").css("color", "red"); $("#wrt7").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[6] == b[4] && b[4] == b[2]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2  Won"); 
+                        $("#wrt3").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt7").css("animation", "example 1s infinite");
+                        $("#wrt3").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt7").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                c++;
+            }
+
+            if (c == 9) {
+                setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Match Draw"); }, 1);
+            }
+
+        });
+
+        $(".a8").on("click", function () {
+
+
+            if ($("#wrt8").text() != "X" && $("#wrt8").text() != "O" && r == 0) {
+                var audio = new Audio("writing.wav");
+                audio.play();
+
+                if (c % 2 == 0) {
+                    $("#wrt8").text("X");
+                    b[7] = 1;
+
+                    if ((b[6] == b[7] && b[7] == b[8])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1  Won"); 
+                        $("#wrt9").css("animation", "example 1s infinite"); $("#wrt8").css("animation", "example 1s infinite"); $("#wrt7").css("animation", "example 1s infinite");
+                        $("#wrt7").css("color", "red"); $("#wrt8").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if ((b[7] == b[4] && b[4] == b[1])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1  Won"); 
+                        $("#wrt2").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt8").css("animation", "example 1s infinite");
+                        $("#wrt2").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt8").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                else {
+                    $("#wrt8").text("O");
+                    b[7] = 0;
+
+                    if ((b[6] == b[7] && b[7] == b[8])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2  Won"); 
+                        $("#wrt7").css("animation", "example 1s infinite"); $("#wrt8").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite");
+                        $("#wrt7").css("color", "red"); $("#wrt8").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if ((b[7] == b[4] && b[4] == b[1])) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2  Won"); 
+                        $("#wrt2").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt8").css("animation", "example 1s infinite");
+                        $("#wrt2").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt8").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                c++;
+            }
+
+            if (c == 9) {
+                setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Match Draw"); }, 1);
+            }
+
+        });
+
+        $(".a9").on("click", function () {
+
+
+
+            if ($("#wrt9").text() != "X" && $("#wrt9").text() != "O" && r == 0) {
+                var audio = new Audio("writing.wav");
+                audio.play();
+
+                if (c % 2 == 0) {
+                    $("#wrt9").text("X");
+                    b[8] = 1;
+
+                    if (b[6] == b[7] && b[7] == b[8]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1  Won"); 
+                        $("#wrt7").css("animation", "example 1s infinite"); $("#wrt8").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite");
+                        $("#wrt7").css("color", "red"); $("#wrt8").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[8] == b[5] && b[5] == b[2]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1  Won"); 
+                        $("#wrt3").css("animation", "example 1s infinite"); $("#wrt6").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite"); 
+                        $("#wrt3").css("color", "red"); $("#wrt6").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[8] == b[4] && b[4] == b[0]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 1  Won"); 
+                        $("#wrt1").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite"); 
+                        $("#wrt1").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                else {
+                    $("#wrt9").text("O");
+                    b[8] = 0;
+                    if (b[6] == b[7] && b[7] == b[8]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2  Won"); 
+                        $("#wrt7").css("animation", "example 1s infinite"); $("#wrt8").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite");
+                        $("#wrt7").css("color", "red"); $("#wrt8").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[8] == b[5] && b[5] == b[2]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2  Won"); 
+                        $("#wrt3").css("animation", "example 1s infinite"); $("#wrt6").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite"); 
+                        $("#wrt3").css("color", "red"); $("#wrt6").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+
+                    if (b[8] == b[4] && b[4] == b[0]) {
+                        setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Player 2  Won"); 
+                        $("#wrt1").css("animation", "example 1s infinite"); $("#wrt5").css("animation", "example 1s infinite"); $("#wrt9").css("animation", "example 1s infinite"); 
+                        $("#wrt1").css("color", "red"); $("#wrt5").css("color", "red"); $("#wrt9").css("color", "red"); }, 1);
+                        c--;
+                        r++;
+                    }
+                }
+
+                c++;
+            }
+
+            if (c == 9) {
+                setTimeout(function () {$("button").show(); $(".make").show(); $("#mk").text("Match Draw"); }, 1);
+            }
+
+        });
+
+        $("button").click(function()
+        {
+            location.reload(true);
+        });
+
+    </script>
+
+</body>
+
+</html>
